@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grainy | Software & Data Innovator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="dark">
+  <div class="ambient-background"></div>
+  
+  <nav>
+    <div class="logo">Grainy</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#extracurricular">Activities</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="toggle-mode" onclick="toggleMode()">Toggle Theme</button>
+  </nav>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="fade-in hero-split" style="min-height: 100vh; display: flex; align-items: center; justify-content: space-between; gap: 40px;">
+      <div class="hero-content" style="flex: 1.2;">
+        <h1 class="gradient-text" style="font-size: 5rem; line-height: 1.1; margin-bottom: 20px; text-shadow: 0 0 30px rgba(0, 210, 255, 0.2);">
+          Hi, I'm <span style="background: linear-gradient(90deg, #00d2ff, #7c3aed); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Grainy</span>
+        </h1>
+        
+        <h2 style="font-size: 1.85rem; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">
+          Software Developer | Data Analyst | AI Systems
+        </h2>
+        <p style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 35px;">
+          B.Tech CSE (Minor in Data Science)
+        </p>
+        
+        <div style="max-width: 680px; margin-bottom: 45px;">
+          <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 22px;">
+            I am a Computer Science undergraduate at Lovely Professional University with a minor in Data Science. I enjoy building backend systems and full stack applications and integrating them with AI capabilities such as RAG pipelines, LLM agents, and machine learning models.
+          </p>
+          <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.7;">
+            My work focuses on combining strong software engineering practices with modern AI tools to build intelligent applications.
+          </p>
+        </div>
+
+        <div class="cta-group" style="display: flex; align-items: center; gap: 20px;">
+          <a href="#projects" class="btn btn-primary" style="padding: 14px 35px; border-radius: 8px; display: flex; align-items: center; gap: 12px; border: 1px solid #00d2ff; font-weight: 600;">
+            View Projects <i data-lucide="arrow-right" style="width: 20px;"></i>
+          </a>
+          <a href="https://github.com/grainy09" target="_blank" class="social-icon-btn"><i data-lucide="github"></i></a>
+          <a href="https://linkedin.com/in/grainy-bajaj/" target="_blank" class="social-icon-btn"><i data-lucide="linkedin"></i></a>
+          <a href="mailto:grainy0908@gmail.com" class="social-icon-btn"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-image-container" style="flex: 0.8; display: flex; justify-content: flex-end;">
+        <div style="position: relative; width: 350px; height: 500px; border-radius: 20px; overflow: hidden; border: 2px solid var(--glass-border); box-shadow: 0 0 40px rgba(0, 210, 255, 0.25);">
+          <img src="assets/profile.jpeg" alt="Grainy" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(10, 10, 15, 0.4), transparent); pointer-events: none;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="fade-in section-padding">
+      <div class="section-header" style="text-align: left; margin-bottom: 50px;">
+        <h2 class="section-title" style="text-align: left; margin-bottom: 10px; display: flex; align-items: center; gap: 15px;">
+          <i data-lucide="user" style="color: #00d2ff; filter: drop-shadow(0 0 8px rgba(0, 210, 255, 0.5));"></i>
+          <span style="color: #ffffff; text-shadow: 0 0 15px rgba(0, 210, 255, 0.3);">About Me</span>
+        </h2>
+        <div style="height: 3px; width: 60px; background: linear-gradient(90deg, #00d2ff, #9d50bb); border-radius: 2px;"></div>
+      </div>
+      
+      <div class="about-container">
+        <div class="about-text">
+          <p>
+            I am currently pursuing a <strong>B.Tech in Computer Science Engineering</strong> at Lovely Professional University with a <strong style="color: #00d2ff;">minor in Data Science</strong>.
+          </p>
+          <p>
+            My primary interest lies in backend development and building full stack applications that integrate artificial intelligence capabilities. I enjoy working with technologies such as Node.js, Flask, MongoDB, Python, and JavaScript while also experimenting with modern AI frameworks including LangChain and Retrieval Augmented Generation (RAG) pipelines.
+          </p>
+          <p>
+            Alongside development, I actively practice data structures and algorithms on platforms such as LeetCode and Codeforces.
+          </p>
+          <p>
+            My goal is to work as a Software Development Engineer where I can build scalable backend systems and integrate AI technologies into real world products.
+          </p>
+
+          <div style="margin-top: 35px; border-left: 2px solid var(--accent-primary); padding-left: 20px;">
+            <p style="font-size: 0.95rem; font-style: italic; color: var(--text-primary);">
+              "My mission is to bridge the gap between advanced AI technology and real-world impact by building accessible, technology-driven solutions."
+            </p>
+          </div>
+
+          <ul style="list-style: none; margin-top: 25px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <li style="font-size: 0.9rem; color: var(--text-secondary);"><i data-lucide="check-circle-2" style="width: 14px; color: var(--accent-primary); margin-right: 8px;"></i> Distributed Systems</li>
+            <li style="font-size: 0.9rem; color: var(--text-secondary);"><i data-lucide="check-circle-2" style="width: 14px; color: var(--accent-primary); margin-right: 8px;"></i> API Optimization</li>
+            <li style="font-size: 0.9rem; color: var(--text-secondary);"><i data-lucide="check-circle-2" style="width: 14px; color: var(--accent-primary); margin-right: 8px;"></i> Data Visualisation</li>
+            <li style="font-size: 0.9rem; color: var(--text-secondary);"><i data-lucide="check-circle-2" style="width: 14px; color: var(--accent-primary); margin-right: 8px;"></i> Regional NLP</li>
+          </ul>
+        </div>
+
+        <div class="about-features">
+          <div class="glass-card small-card">
+            <div class="icon-box"><i data-lucide="database"></i></div>
+            <h4>Backend Systems</h4>
+            <p>Building scalable node and python backends.</p>
+          </div>
+          <div class="glass-card small-card">
+            <div class="icon-box"><i data-lucide="cpu"></i></div>
+            <h4>AI Integration</h4>
+            <p>RAG pipelines, LangChain, and MCP servers.</p>
+          </div>
+          <div class="glass-card small-card">
+            <div class="icon-box"><i data-lucide="code-2"></i></div>
+            <h4>Problem Solving</h4>
+            <p>500+ DSA problems solved.</p>
+          </div>
+          <div class="glass-card small-card">
+            <div class="icon-box"><i data-lucide="layout"></i></div>
+            <h4>Full Stack</h4>
+            <p>Deploying end-to-end web applications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="fade-in section-padding">
+      <h2 class="section-title">Technical Expertise</h2>
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        <div class="glass-card skill-card">
+          <div class="card-icon">🧠</div>
+          <h3>AI & Machine Learning</h3>
+          <p>Large Language Models, RAG Pipelines, Prompt Engineering, and fine-tuning models for specific domains.</p>
+          <div class="tags" style="margin-top: 15px;">
+            <span>LLMs</span>
+            <span>LangChain</span>
+            <span>PyTorch</span>
+          </div>
+        </div>
+        <div class="glass-card skill-card">
+          <div class="card-icon">🤖</div>
+          <h3>Data Science</h3>
+          <p>Exploratory Data Analysis, Predictive Modeling, and creating interactive Data Dashboards with Power BI.</p>
+          <div class="tags" style="margin-top: 15px;">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>Power BI</span>
+          </div>
+        </div>
+        <div class="glass-card skill-card">
+          <div class="card-icon">🌐</div>
+          <h3>Full Stack Development</h3>
+          <p>Building responsive frontends and scalable backends using modern JavaScript/TypeScript frameworks.</p>
+          <div class="tags" style="margin-top: 15px;">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Express</span>
+          </div>
+        </div>
+        <div class="glass-card skill-card">
+          <div class="card-icon">🛠️</div>
+          <h3>Tools & Dev Ops</h3>
+          <p>Proficient with version control, cloud-based environments, and modern development workflows.</p>
+          <div class="tags" style="margin-top: 15px;">
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Linux</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL CERTIFICATIONS -->
+    <section id="certificates" class="fade-in section-padding">
+      <h2 class="section-title">Professional Certifications</h2>
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <!-- Certificate 1 -->
+        <div class="glass-card cert-card">
+          <img src="assets/certificates/oracle grainy data science eCertificate.jpg" alt="Oracle Data Science" class="cert-img">
+          <div class="cert-info">
+            <span class="badge" style="background: var(--accent-primary); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 12px; display: inline-block;">FEATURED</span>
+            <h3 style="font-size: 1.1rem;">Oracle Data Science</h3>
+            <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 15px;">Advanced Analytics & ML Mastery</p>
+            <a href="assets/certificates/oracle grainy data science eCertificate.jpg" target="_blank" class="cert-link">View Certificate</a>
+          </div>
+        </div>
+        <!-- Certificate 2 -->
+        <div class="glass-card cert-card">
+          <img src="assets/certificates/chatgpt 4 prompt eng certificate.jpg" alt="ChatGPT 4" class="cert-img">
+          <div class="cert-info">
+            <span class="badge" style="background: var(--accent-primary); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 12px; display: inline-block;">FEATURED</span>
+            <h3 style="font-size: 1.1rem;">ChatGPT 4 Prompt Eng</h3>
+            <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 15px;">Professional Prompt Design Strategy</p>
+            <a href="assets/certificates/chatgpt 4 prompt eng certificate.jpg" target="_blank" class="cert-link">View Certificate</a>
+          </div>
+        </div>
+        <!-- Certificate 3 -->
+        <div class="glass-card cert-card">
+          <img src="assets/certificates/automation theory certificate.jpg" alt="Automation Theory" class="cert-img">
+          <div class="cert-info">
+            <h3 style="font-size: 1.1rem;">Automation Theory</h3>
+            <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 15px;">Systems Automation & AI Logic</p>
+            <a href="assets/certificates/automation theory certificate.jpg" target="_blank" class="cert-link">View Certificate</a>
+          </div>
+        </div>
+        <!-- Certificate 4 -->
+        <div class="glass-card cert-card">
+          <img src="assets/certificates/chatgpt ai essentials certificate.jpg" alt="AI Essentials" class="cert-img">
+          <div class="cert-info">
+            <h3 style="font-size: 1.1rem;">ChatGPT AI Essentials</h3>
+            <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 15px;">Foundation for Generative AI Apps</p>
+            <a href="assets/certificates/chatgpt ai essentials certificate.jpg" target="_blank" class="cert-link">View Certificate</a>
+          </div>
+        </div>
+        <!-- Certificate 5: Java Programming -->
+        <div class="glass-card cert-card">
+          <img src="assets/certificates/https___s3.amazonaws.com_exams-media_Java Programming_Student Certificate_Updated_12316766@neocolab.ai.jpg" alt="Java Programming" class="cert-img">
+          <div class="cert-info">
+            <h3 style="font-size: 1.1rem;">Java Programming</h3>
+            <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 15px;">Core Java & OOP Concepts</p>
+            <a href="assets/certificates/https___s3.amazonaws.com_exams-media_Java Programming_Student Certificate_Updated_12316766@neocolab.ai.pdf" target="_blank" class="cert-link">View Certificate</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="fade-in section-padding">
+      <h2 class="section-title">My Projects</h2>
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+        
+        <!-- PROJECT 1: AgriGPT -->
+        <div class="glass-card project-card">
+          <img src="assets/projects/agrigpt.jpg" alt="AgriGPT" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 20px;">
+          <div class="project-content">
+            <h3 style="margin-bottom: 5px;">AgriGPT - Smart Farming</h3>
+            <div style="color: var(--accent-primary); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">Lead AI Developer</div>
+            <p style="margin-bottom: 20px;">A revolutionary offline-first AI assistant for farmers. It uses regional language processing to provide crop solutions without internet access.</p>
+            <div class="tags" style="margin-bottom: 25px;">
+              <span>React</span>
+              <span>Python</span>
+              <span>AI/ML</span>
+            </div>
+            <div class="cta-group">
+              <a href="https://github.com/grainy09/AgriGPT-AI-for-Farmers-Anywhere" target="_blank" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.9rem;"><i data-lucide="github" style="width: 18px; margin-right: 8px;"></i> Visit GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: India Air Quality -->
+        <div class="glass-card project-card">
+          <img src="assets/projects/airquality.jpg" alt="Air Quality Dashboard" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 20px;">
+          <div class="project-content">
+            <h3 style="margin-bottom: 5px;">India Air Quality Monitoring</h3>
+            <div style="color: var(--accent-primary); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">Data Analyst</div>
+            <p style="margin-bottom: 20px;">Comprehensive Power BI dashboard visualizing real-time pollution metrics across major Indian cities, identifying high-risk zones.</p>
+            <div class="tags" style="margin-bottom: 25px;">
+              <span>Power BI</span>
+              <span>Data Analytics</span>
+              <span>SQL</span>
+            </div>
+            <div class="cta-group" style="gap: 10px;">
+              <a href="https://www.linkedin.com/posts/grainy-bajaj_datascience-analyticsproject-powerbi-activity-7405885024996065280-gqkT" target="_blank" class="btn btn-primary" style="flex: 1; text-align: center; font-size: 0.85rem; padding: 10px;"><i data-lucide="linkedin" style="width: 16px; margin-right: 5px;"></i> Visit LinkedIn</a>
+              <a href="https://github.com/grainy09" target="_blank" class="btn btn-outline" style="flex: 1; text-align: center; font-size: 0.85rem; padding: 10px;"><i data-lucide="github" style="width: 16px; margin-right: 5px;"></i> Visit GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: Smart Accident Analytics -->
+        <div class="glass-card project-card">
+          <img src="assets/projects/accident_analytics.png" alt="Accident Analytics" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 20px;">
+          <div class="project-content">
+            <h3 style="margin-bottom: 5px;">Smart Accident Analytics</h3>
+            <div style="color: var(--accent-primary); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">Safety Data Engineer</div>
+            <p style="margin-bottom: 20px;">Utilizing advanced Excel functions and Power BI to analyze regional crash data. This project identifies high-risk weather conditions for road safety.</p>
+            <div class="tags" style="margin-bottom: 25px;">
+              <span>Excel Analytics</span>
+              <span>Power BI</span>
+              <span>SQL</span>
+            </div>
+            <div class="cta-group" style="gap: 10px;">
+              <a href="https://www.linkedin.com/posts/grainy-bajaj_exceldashboard-roadsafetyanalytics-datavisualization-activity-7317202285925658625-tXnX" target="_blank" class="btn btn-primary" style="flex: 1; text-align: center; font-size: 0.85rem; padding: 10px;"><i data-lucide="linkedin" style="width: 16px; margin-right: 5px;"></i> Visit LinkedIn</a>
+              <a href="https://github.com/grainy09/exel-dashboard" target="_blank" class="btn btn-outline" style="flex: 1; text-align: center; font-size: 0.85rem; padding: 10px;"><i data-lucide="github" style="width: 16px; margin-right: 5px;"></i> Visit GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: ML Research -->
+        <div class="glass-card project-card">
+          <img src="assets/projects/ml_research.png" alt="ML Research" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 20px;">
+          <div class="project-content">
+            <h3 style="margin-bottom: 5px;">Feature Correlation Research</h3>
+            <div style="color: var(--accent-primary); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">ML Researcher</div>
+            <p style="margin-bottom: 20px;">A deep dive into e-commerce consumer behavior. Analyzing over 12,000 sessions to find correlations using Python and Pandas.</p>
+            <div class="tags" style="margin-bottom: 25px;">
+              <span>Python</span>
+              <span>Seaborn</span>
+              <span>Data Mining</span>
+            </div>
+            <div class="cta-group" style="gap: 10px;">
+              <a href="https://www.linkedin.com/posts/grainy-bajaj_python-pandas-dataanalysis-activity-7322484013640646657-ubYN" target="_blank" class="btn btn-primary" style="flex: 1; text-align: center; font-size: 0.85rem; padding: 10px;"><i data-lucide="linkedin" style="width: 16px; margin-right: 5px;"></i> Visit LinkedIn</a>
+              <a href="https://github.com/grainy09" target="_blank" class="btn btn-outline" style="flex: 1; text-align: center; font-size: 0.85rem; padding: 10px;"><i data-lucide="github" style="width: 16px; margin-right: 5px;"></i> Visit GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 5: Echo AI - Clean Energy Impact -->
+        <div class="glass-card project-card">
+          <img src="assets/projects/global_impact.jpg" alt="Echo AI & Clean Energy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; margin-bottom: 20px;">
+          <div class="project-content">
+            <h3 style="margin-bottom: 5px;">Echo AI - Sustainability Hub</h3>
+            <div style="color: var(--accent-primary); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px;">Software & Sustainability Engineer</div>
+            <p style="margin-bottom: 20px;">Merging AI intelligence with global energy data. This project visualizes wind and solar energy outputs to illustrate carbon reduction.</p>
+            <div class="tags" style="margin-bottom: 25px;">
+              <span>Sustainability Data</span>
+              <span>AI Integration</span>
+              <span>D3.js</span>
+            </div>
+            <div class="cta-group">
+              <a href="https://github.com/grainy09/Data-Visualization" target="_blank" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.9rem;"><i data-lucide="github" style="width: 18px; margin-right: 8px;"></i> Visit GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXTRA CURRICULAR ACTIVITIES -->
+    <section id="extracurricular" class="fade-in section-padding">
+      <h2 class="section-title">Extra Curricular Activities</h2>
+      <div class="grid" style="max-width: 900px; margin: 0 auto; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+        <div class="glass-card" style="padding: 20px;">
+          <a href="assets/hack.jpeg" target="_blank" style="display: block; height: 180px; overflow: hidden; border-radius: 12px; margin-bottom: 15px; border: 1px solid var(--glass-border);">
+            <img src="assets/hack.jpeg" alt="Hackathon" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+          </a>
+          <h3 style="margin-bottom: 8px; font-size: 1.15rem;">Hackathons & Competitions</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">Participated in national coding challenges and logic-solving marathons across various technical fests.</p>
+        </div>
+        <div class="glass-card" style="padding: 20px;">
+          <a href="assets/cdp.jpeg" target="_blank" style="display: block; height: 180px; overflow: hidden; border-radius: 12px; margin-bottom: 15px; border: 1px solid var(--glass-border);">
+            <img src="assets/cdp.jpeg" alt="CDP Workshop" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+          </a>
+          <h3 style="margin-bottom: 8px; font-size: 1.15rem;">Workshops & CDP</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">Actively involved in tech workshops and career development programs as a student mentor.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="fade-in section-padding">
+      <h2 class="section-title">Education</h2>
+      <div class="grid" style="grid-template-columns: 1fr; max-width: 900px; margin: 0 auto; gap: 20px;">
+        <div class="glass-card" style="padding: 25px;">
+          <h3 style="margin-bottom: 5px;">Lovely Professional University</h3>
+          <div style="color: var(--accent-primary); font-weight: 600; margin-bottom: 5px;">Bachelor of Technology, Computer Science and Engineering</div>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">Aug’ 23 – Present | CGPA: 6.72</p>
+          <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 10px;">Phagwara, Punjab</p>
+        </div>
+        <div class="glass-card" style="padding: 25px;">
+          <h3 style="margin-bottom: 5px;">Govt. Senior Secondary School</h3>
+          <div style="color: var(--accent-primary); font-weight: 600; margin-bottom: 5px;">Intermediate, PCM</div>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">Mar’ 21 – May’ 22 | Percentage: 96%</p>
+          <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 10px;">Fazilka, Punjab</p>
+        </div>
+        <div class="glass-card" style="padding: 25px;">
+          <h3 style="margin-bottom: 5px;">Mata Gujri Public School</h3>
+          <div style="color: var(--accent-primary); font-weight: 600; margin-bottom: 5px;">Matriculation</div>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">Mar’ 19 – May’ 20 | Percentage: 85%</p>
+          <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 10px;">Jalalabad, Punjab</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="fade-in section-padding center-text">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="subtitle" style="max-width: 600px; margin: 0 auto 50px;">I'm always open to new opportunities, collaborations, or even just a friendly tech chat. Feel free to reach out via any of the channels below!</p>
+      
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto;">
+        <!-- EMAIL CARD -->
+        <div class="glass-card" style="padding: 30px; text-align: center;">
+          <div class="icon-box" style="margin: 0 auto 15px;"><i data-lucide="mail"></i></div>
+          <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Direct Email</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px;">For project inquiries or official communication.</p>
+          <a href="mailto:grainy0908@gmail.com" class="btn btn-primary" style="width: 100%; text-align: center;">Send an Email</a>
+        </div>
+        
+        <!-- LINKEDIN CARD -->
+        <div class="glass-card" style="padding: 30px; text-align: center;">
+          <div class="icon-box" style="margin: 0 auto 15px;"><i data-lucide="linkedin"></i></div>
+          <h3 style="font-size: 1.15rem; margin-bottom: 8px;">LinkedIn</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px;">Let's connect professionally and share insights.</p>
+          <a href="https://linkedin.com/in/grainy-bajaj/" target="_blank" class="btn btn-outline" style="width: 100%; text-align: center;">Connect with Me</a>
+        </div>
+        
+        <!-- GITHUB CARD -->
+        <div class="glass-card" style="padding: 30px; text-align: center;">
+          <div class="icon-box" style="margin: 0 auto 15px;"><i data-lucide="github"></i></div>
+          <h3 style="font-size: 1.15rem; margin-bottom: 8px;">GitHub</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px;">Check out my latest codebases and contributions.</p>
+          <a href="https://github.com/grainy09" target="_blank" class="btn btn-outline" style="width: 100%; text-align: center;">Explore Repo</a>
+        </div>
+      </div>
+
+      <div class="glass-card contact-form-container">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="email@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" class="form-input" placeholder="How can I help you?" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            <span>Send Message</span>
+            <i data-lucide="send" style="width: 18px;"></i>
+          </button>
+        </form>
+      </div>
+
+      <div style="margin-top: 60px; color: var(--text-secondary); font-size: 0.95rem;">
+        <p><i data-lucide="map-pin" style="width: 16px; margin-right: 8px; vertical-align: middle;"></i> Phagwara, Punjab (LPU Academic Residence)</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Grainy. Built with precision and passion.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
