@@ -3,12 +3,16 @@ function toggleMode() {
   body.classList.toggle('light');
   
   const toggleBtn = document.querySelector('.toggle-mode');
-  if (toggleBtn) {
-    if (body.classList.contains('light')) {
-      toggleBtn.textContent = 'Dark Mode';
-    } else {
-      toggleBtn.textContent = 'Light Mode';
-    }
+  
+  if (body.classList.contains('light')) {
+    toggleBtn.innerHTML = `<i data-lucide="moon"></i>`;
+  } else {
+    toggleBtn.innerHTML = `<i data-lucide="sun"></i>`;
+  }
+  
+  // Re-initialize Lucide icons to update the icon
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
   }
 }
 
