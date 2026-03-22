@@ -10,7 +10,23 @@ function toggleMode() {
     toggleBtn.innerHTML = `<i data-lucide="sun"></i>`;
   }
   
-  // Re-initialize Lucide icons to update the icon
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+  }
+}
+
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  const menuBtn = document.querySelector('.mobile-menu-btn i');
+  
+  navLinks.classList.toggle('active');
+  
+  if (navLinks.classList.contains('active')) {
+    menuBtn.setAttribute('data-lucide', 'x');
+  } else {
+    menuBtn.setAttribute('data-lucide', 'menu');
+  }
+  
   if (typeof lucide !== 'undefined') {
     lucide.createIcons();
   }
