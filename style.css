@@ -91,6 +91,20 @@ nav {
   color: var(--accent-primary);
 }
 
+.nav-resume-btn {
+  border: 1px solid rgba(0, 210, 255, 0.45) !important;
+  border-radius: 6px !important;
+  padding: 4px 12px !important;
+  color: #00d2ff !important;
+  transition: background 0.2s, box-shadow 0.2s !important;
+}
+
+.nav-resume-btn:hover {
+  background: rgba(0, 210, 255, 0.12) !important;
+  box-shadow: 0 0 12px rgba(0, 210, 255, 0.25) !important;
+  color: #00d2ff !important;
+}
+
 .nav-controls {
   display: flex;
   align-items: center;
@@ -252,6 +266,13 @@ main {
   text-decoration: none;
 }
 
+.social-icon-btn svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  display: block;
+}
+
 .social-icon-btn:hover {
   border-color: var(--accent-primary);
   background: rgba(0, 210, 255, 0.1);
@@ -294,13 +315,17 @@ main {
 }
 
 .skill-card h3 {
-  font-size: 1.25rem;
-  margin-bottom: 12px;
+  font-size: 1.35rem;
+  margin-bottom: 14px;
 }
 
 .skill-card p {
   color: var(--text-secondary);
-  font-size: 0.95rem;
+  font-size: 1rem;
+}
+
+.skill-card .card-icon {
+  font-size: 3rem;
 }
 
 .project-card {
@@ -332,6 +357,20 @@ main {
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tags span i[class^="devicon"] {
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.dark .tags span i.devicon-github-original,
+.dark .tags span i.devicon-express-original,
+.dark .tags span i.devicon-linux-plain {
+  color: #e2e8f0;
 }
 
 .max-w-content {

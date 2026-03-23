@@ -6,6 +6,7 @@
   <title>Grainy | Software & Data Innovator</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="dark">
@@ -19,8 +20,10 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#extracurricular">Activities</a></li>
+      <li><a href="#training">Training</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="assets/resume/resume grainy.pdf" target="_blank" class="nav-resume-btn"><i data-lucide="file-text" style="width:15px;vertical-align:middle;margin-right:5px;"></i>Resume</a></li>
     </ul>
     <div class="nav-controls">
       <button class="toggle-mode" onclick="toggleMode()" aria-label="Toggle Theme">
@@ -56,12 +59,19 @@
           </p>
         </div>
 
-        <div class="cta-group" style="display: flex; align-items: center; gap: 20px;">
+        <div class="cta-group" style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
           <a href="#projects" class="btn btn-primary" style="padding: 14px 35px; border-radius: 8px; display: flex; align-items: center; gap: 12px; border: 1px solid #00d2ff; font-weight: 600;">
             View Projects <i data-lucide="arrow-right" style="width: 20px;"></i>
           </a>
-          <a href="https://github.com/grainy09" target="_blank" class="social-icon-btn"><i data-lucide="github"></i></a>
-          <a href="https://linkedin.com/in/grainy-bajaj/" target="_blank" class="social-icon-btn"><i data-lucide="linkedin"></i></a>
+          <a href="assets/resume/resume grainy.pdf" target="_blank" download class="btn btn-outline" style="padding: 14px 35px; border-radius: 8px; display: flex; align-items: center; gap: 12px; font-weight: 600;">
+            <i data-lucide="download" style="width: 20px;"></i> Download CV
+          </a>
+          <a href="https://github.com/grainy09" target="_blank" class="social-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/grainy-bajaj/" target="_blank" class="social-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0H5C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+          </a>
           <a href="mailto:grainy0908@gmail.com" class="social-icon-btn"><i data-lucide="mail"></i></a>
         </div>
       </div>
@@ -127,7 +137,7 @@
           <div class="glass-card small-card">
             <div class="icon-box"><i data-lucide="code-2"></i></div>
             <h4>Problem Solving</h4>
-            <p>500+ DSA problems solved.</p>
+            <p>150+ DSA problems solved.</p>
           </div>
           <div class="glass-card small-card">
             <div class="icon-box"><i data-lucide="layout"></i></div>
@@ -140,36 +150,36 @@
 
     <!-- SKILLS -->
     <section id="skills" class="fade-in section-padding">
-      <h2 class="section-title">Technical Expertise</h2>
-      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+      <h2 class="section-title">Skills</h2>
+      <div class="grid" style="grid-template-columns: repeat(2, 1fr); max-width: 860px; margin: 0 auto;">
         <div class="glass-card skill-card">
           <div class="card-icon">🧠</div>
           <h3>AI & Machine Learning</h3>
           <p>Large Language Models, RAG Pipelines, Prompt Engineering, and fine-tuning models for specific domains.</p>
           <div class="tags" style="margin-top: 15px;">
-            <span>LLMs</span>
-            <span>LangChain</span>
-            <span>PyTorch</span>
+            <span><i class="devicon-python-plain colored"></i> Python</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" width="14" height="14" style="vertical-align:middle;"> PyTorch</span>
+            <span>🔗 LangChain</span>
           </div>
         </div>
         <div class="glass-card skill-card">
-          <div class="card-icon">🤖</div>
-          <h3>Data Science</h3>
-          <p>Exploratory Data Analysis, Predictive Modeling, and creating interactive Data Dashboards with Power BI.</p>
+          <div class="card-icon" style="font-size: 3rem;">🤖</div>
+          <h3 style="font-size: 1.35rem; margin-bottom: 14px;">Data Science</h3>
+          <p style="font-size: 1rem;">Exploratory Data Analysis, Predictive Modeling, and creating interactive Data Dashboards with Power BI.</p>
           <div class="tags" style="margin-top: 15px;">
-            <span>Python</span>
-            <span>Pandas</span>
-            <span>Power BI</span>
+            <span><i class="devicon-python-plain colored"></i> Python</span>
+            <span><i class="devicon-pandas-plain colored"></i> Pandas</span>
+            <span>📊 Power BI</span>
           </div>
         </div>
         <div class="glass-card skill-card">
-          <div class="card-icon">🌐</div>
-          <h3>Full Stack Development</h3>
-          <p>Building responsive frontends and scalable backends using modern JavaScript/TypeScript frameworks.</p>
+          <div class="card-icon" style="font-size: 3rem;">🌐</div>
+          <h3 style="font-size: 1.35rem; margin-bottom: 14px;">Full Stack Development</h3>
+          <p style="font-size: 1rem;">Building responsive frontends and scalable backends using modern JavaScript/TypeScript frameworks.</p>
           <div class="tags" style="margin-top: 15px;">
-            <span>React</span>
-            <span>Node.js</span>
-            <span>Express</span>
+            <span><i class="devicon-react-original colored"></i> React</span>
+            <span><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+            <span><i class="devicon-express-original"></i> Express</span>
           </div>
         </div>
         <div class="glass-card skill-card">
@@ -177,9 +187,9 @@
           <h3>Tools & Dev Ops</h3>
           <p>Proficient with version control, cloud-based environments, and modern development workflows.</p>
           <div class="tags" style="margin-top: 15px;">
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>Linux</span>
+            <span><i class="devicon-git-plain colored"></i> Git</span>
+            <span><i class="devicon-github-original"></i> GitHub</span>
+            <span><i class="devicon-linux-plain"></i> Linux</span>
           </div>
         </div>
       </div>
@@ -343,20 +353,86 @@
     <!-- EXTRA CURRICULAR ACTIVITIES -->
     <section id="extracurricular" class="fade-in section-padding">
       <h2 class="section-title">Extra Curricular Activities</h2>
-      <div class="grid" style="max-width: 900px; margin: 0 auto; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-        <div class="glass-card" style="padding: 20px;">
-          <a href="assets/hack.jpeg" target="_blank" style="display: block; height: 180px; overflow: hidden; border-radius: 12px; margin-bottom: 15px; border: 1px solid var(--glass-border);">
-            <img src="assets/hack.jpeg" alt="Hackathon" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-          </a>
-          <h3 style="margin-bottom: 8px; font-size: 1.15rem;">Hackathons & Competitions</h3>
-          <p style="color: var(--text-secondary); font-size: 0.9rem;">Participated in national coding challenges and logic-solving marathons across various technical fests.</p>
+      <div class="grid" style="max-width: 1100px; margin: 0 auto; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));">
+
+        <!-- Card 1: Hackathons -->
+        <div class="glass-card" style="padding: 28px; display: flex; flex-direction: column; gap: 14px;">
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <div class="icon-box" style="background: rgba(0,210,255,0.12); color: #00d2ff; width:44px; height:44px; flex-shrink:0;"><i data-lucide="trophy"></i></div>
+            <h3 style="font-size: 1.15rem; margin: 0;">Hackathons &amp; Competitions</h3>
+          </div>
+          <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.65;">Participated in national-level coding challenges and 24-hour hackathons, collaborating with teams to build innovative solutions under pressure.</p>
+          <div class="tags"><span>Team Collaboration</span><span>Problem Solving</span><span>Innovation</span></div>
+          <a href="assets/hack.jpeg" target="_blank" class="btn btn-outline" style="margin-top: 4px; display: inline-flex; align-items: center; gap: 8px; font-size: 0.88rem; padding: 9px 18px; width: fit-content;"><i data-lucide="image" style="width:16px;"></i> View Pic</a>
         </div>
-        <div class="glass-card" style="padding: 20px;">
-          <a href="assets/cdp.jpeg" target="_blank" style="display: block; height: 180px; overflow: hidden; border-radius: 12px; margin-bottom: 15px; border: 1px solid var(--glass-border);">
-            <img src="assets/cdp.jpeg" alt="CDP Workshop" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
-          </a>
-          <h3 style="margin-bottom: 8px; font-size: 1.15rem;">Workshops & CDP</h3>
-          <p style="color: var(--text-secondary); font-size: 0.9rem;">Actively involved in tech workshops and career development programs as a student mentor.</p>
+
+        <!-- Card 2: Workshops & CDP -->
+        <div class="glass-card" style="padding: 28px; display: flex; flex-direction: column; gap: 14px;">
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <div class="icon-box" style="background: rgba(124,58,237,0.12); color: #7c3aed; width:44px; height:44px; flex-shrink:0;"><i data-lucide="presentation"></i></div>
+            <h3 style="font-size: 1.15rem; margin: 0;">Workshops &amp; CDP</h3>
+          </div>
+          <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.65;">Engaged in tech workshops and Career Development Programs at LPU, serving as a student mentor to guide peers through technical concepts.</p>
+          <div class="tags"><span>Mentoring</span><span>Leadership</span><span>Public Speaking</span></div>
+          <a href="assets/cdp.jpeg" target="_blank" class="btn btn-outline" style="margin-top: 4px; display: inline-flex; align-items: center; gap: 8px; font-size: 0.88rem; padding: 9px 18px; width: fit-content;"><i data-lucide="image" style="width:16px;"></i> View Pic</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TRAINING -->
+    <section id="training" class="fade-in section-padding">
+      <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+        <h2 class="section-title" style="display: inline-flex; align-items: center; gap: 14px;">
+          <i data-lucide="briefcase" style="color: #00d2ff; filter: drop-shadow(0 0 8px rgba(0,210,255,0.5));"></i>
+          <span>Training</span>
+        </h2>
+        <div style="height: 3px; width: 60px; background: linear-gradient(90deg, #00d2ff, #9d50bb); border-radius: 2px; margin: 10px auto 0;"></div>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="glass-card" style="padding: 30px; overflow: hidden; border: 1px solid rgba(0,210,255,0.25); box-shadow: 0 0 40px rgba(0,210,255,0.08);">
+
+          <!-- Card Footer -->
+          <div style="padding: 30px; text-align: center;">
+            <span style="background: linear-gradient(90deg,#00d2ff,#7c3aed); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-weight: 700; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase;">Certified Achievement</span>
+            <h3 style="font-size: 1.4rem; margin: 10px 0 4px;">DSA Using C++</h3>
+            <div style="color: var(--accent-primary); font-weight: 600; font-size: 0.95rem; margin-bottom: 4px;">CSE Pathshala (Edtech Company)</div>
+            <div style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 20px;">Jun' 25 – Jul' 25</div>
+            <ul style="list-style: none; text-align: left; margin-bottom: 28px; display: flex; flex-direction: column; gap: 12px;">
+              <li style="display: flex; gap: 12px; align-items: flex-start; color: var(--text-secondary); font-size: 0.93rem; line-height: 1.6;">
+                <i data-lucide="chevron-right" style="width: 16px; min-width: 16px; margin-top: 4px; color: #00d2ff;"></i>
+                Brought production-ready Event Management and Library Management Systems using DSA-driven architecture, achieving <strong style="color: var(--text-primary);">50% faster data retrieval</strong> and record processing.
+              </li>
+              <li style="display: flex; gap: 12px; align-items: flex-start; color: var(--text-secondary); font-size: 0.93rem; line-height: 1.6;">
+                <i data-lucide="chevron-right" style="width: 16px; min-width: 16px; margin-top: 4px; color: #00d2ff;"></i>
+                Engineered C++ implementations of core data structures including arrays, linked lists, stacks, queues, trees, and graphs, improving execution efficiency by <strong style="color: var(--text-primary);">40%</strong>.
+              </li>
+              <li style="display: flex; gap: 12px; align-items: flex-start; color: var(--text-secondary); font-size: 0.93rem; line-height: 1.6;">
+                <i data-lucide="chevron-right" style="width: 16px; min-width: 16px; margin-top: 4px; color: #00d2ff;"></i>
+                Accelerated search, sort, and scheduling workflows by applying binary search, merge sort, and BFS/DFS, boosting system performance by <strong style="color: var(--text-primary);">35%</strong>.
+              </li>
+            </ul>
+
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+              <a
+                href="assets/certificates/Certificate_Grainy.jpg"
+                target="_blank"
+                class="btn btn-primary"
+                style="display: flex; align-items: center; gap: 10px; padding: 12px 28px;"
+              >
+                <i data-lucide="eye" style="width: 18px;"></i> View Certificate
+              </a>
+              <a
+                href="assets/certificates/Certificate_Grainy.jpg"
+                download="Summer_Training_Certificate_Grainy.jpg"
+                class="btn btn-outline"
+                style="display: flex; align-items: center; gap: 10px; padding: 12px 28px;"
+              >
+                <i data-lucide="download" style="width: 18px;"></i> Download
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
